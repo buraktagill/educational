@@ -1,0 +1,855 @@
+/* CSS FILE */
+/* body{
+    width: 100%;
+} */
+/* #topbar{
+    border-bottom: 1px solid #093e5226;
+} */
+.top_list {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    list-style: none;
+    display: flex;
+    justify-content: right;
+    margin-right: 5%;
+}
+
+.top_list>li {
+    border-left: 1px solid #d7d7d787;
+    color: #093e52;
+    padding: 14px;
+}
+
+.top_list>li:last-child {
+    border-right: 1px solid #d7d7d787;
+}
+
+.logo {
+    background-image: url('../shared/images/header_logo.png');
+    background-size: cover;
+    height: 25vh;
+    background-position: center;
+    margin: 0px;
+}
+
+.menu {
+    background-color: #093e52;
+}
+
+.menu_items {
+    display: flex;
+    place-content: center;
+    margin-top: 0;
+}
+
+.menu_items>li {
+    color: #fff;
+    margin: 20px;
+}
+
+.menu_items>li:first-child {
+    list-style: none;
+}
+
+.menu_items>.active {
+    border-bottom: 1px solid #c69f08;
+}
+
+::marker {
+    color: #c69f08;
+}
+
+.inside {
+    position: relative;
+}
+
+.student_img {
+    background-image: url(../shared/images/student.png);
+    height: 80vh;
+    margin-top: -16px;
+    background-size: cover;
+}
+
+.categories {
+    display: flex;
+    padding: 30px;
+}
+
+.staff,
+.donate,
+.food {
+    background-image: url(../shared/images/our_school.png);
+    background-size: cover;
+    height: 15vh;
+    width: 100%;
+    margin: 10px;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.staff>div,
+.donate>div,
+.food>div {
+    position: absolute;
+    right: 0;
+    background: #2a5c6f;
+    color: #fff;
+    height: 25vh;
+    text-align: center;
+    width: 35%;
+    font-size: 15px;
+    padding-top: 60px;
+}
+
+.news_container {
+    border-top: 3px solid #dcad0e;
+    margin: -50px 50px 50px 50px;
+    background-color: #fff;
+}
+
+.list_news {
+    padding: 0px 50px;
+    display: flex;
+}
+
+.list_news>.upcoming,
+.list_news>.announcement {
+    width: 50%;
+}
+
+.upcoming>h1,
+.announcement>h1 {
+    font-family: cursive;
+    color: #2a5c6f;
+}
+
+.events {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.events>div:last-child {
+    place-self: center;
+}
+
+.event_date {
+    display: grid;
+    background: #c5951d;
+    color: #2a5c6f;
+    border-radius: 50%;
+    padding: 10px;
+    text-align: center;
+    margin-right: 25px;
+    width: 40px;
+    height: 40px;
+}
+
+.event_date>span:first-child {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.event_date>span:last-child {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.events>div:last-child>h4 {
+    margin: 0px;
+    font-family: cursive;
+    color: #2a5c6f;
+    margin-bottom: 10px;
+}
+
+.btn_area>a {
+    color: #2a5c6f;
+    cursor: pointer;
+    font-family: cursive;
+}
+
+.btn_area>a:first-child {
+    margin-right: 15px;
+}
+
+.btn_area>a>i {
+    color: #dcad0e;
+}
+
+.news,
+.news_noimg {
+    display: flex;
+    border-bottom: 1px dashed #2a5c6f;
+    border-bottom-style: dashed;
+    padding-bottom: 10px;
+    margin-top: 15px;
+}
+
+.news_noimg {
+    margin-bottom: 10px;
+}
+
+.news_img {
+    background-image: url(../shared/images/library.jpg);
+    background-size: cover;
+    height: 15vh;
+    background-position-x: center;
+    width: 30%;
+    margin-right: 50px;
+}
+
+.news>div:last-child {
+    width: 70%;
+}
+
+.news>div:last-child>h4,
+.news_noimg>div:last-child>h4 {
+    margin: 0px;
+    color: #2a5c6f;
+    font-family: cursive;
+}
+
+.news>div:last-child>p,
+.news_noimg>div:last-child>p {
+    font-family: cursive;
+    font-size: 15px;
+}
+
+.announcement>a {
+    color: #2a5c6f;
+    font-family: cursive;
+    cursor: pointer;
+}
+
+.announcement>a>i {
+    color: #dcad0e;
+}
+
+.school_img {
+    background-image: url(../shared/images/school.png);
+    background-size: cover;
+    height: 70vh;
+    background-position-x: center;
+}
+
+.gallery {
+    position: relative;
+}
+
+.gallery>h2 {
+    margin-left: 14%;
+    font-family: cursive;
+    font-size: 35px;
+    color: #093e52;
+}
+
+.img_area {
+    display: flex;
+    place-content: center;
+}
+
+.our_school {
+    background-image: url(../shared/images/our_school.png);
+    height: 50vh;
+    background-position-x: center;
+    background-size: cover;
+}
+
+.our_school_container,
+.school_life_container {
+    width: 35%;
+    text-align: center;
+    margin: 20px;
+}
+
+.our_school_container>div,
+.school_life_container>div {
+    border: 1px solid #d7d7d787;
+    padding: 10px;
+    font-family: cursive;
+    font-weight: bold;
+    color: #093e52;
+    font-size: 30px;
+}
+
+.school_life {
+    background-image: url(../shared/images/school_life.png);
+    height: 50vh;
+    background-position-x: center;
+    background-size: cover;
+}
+
+.video_area {
+    position: relative;
+    display: flex;
+    background-color: #093e52;
+    color: #fff;
+    margin: 40px;
+}
+
+.video_text {
+    width: 20%;
+    display: grid;
+    padding: 35px;
+}
+
+.video_text>h1 {
+    font-weight: 100;
+    font-family: cursive;
+    font-size: 65px;
+}
+
+.video_text>span {
+    font-family: cursive;
+    font-size: 25px;
+}
+
+.video_text>a {
+    font-family: cursive;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.video_text>a>i {
+    color: #dcad0e;
+}
+
+.video {
+    width: 80%;
+}
+
+.video>iframe {
+    width: 100%;
+    height: 500px;
+}
+
+.copyright_text {
+    text-align: center;
+    margin: 55px 25px 25px 25px;
+}
+
+.copyright {
+    text-align: center;
+    display: grid;
+    background-color: #ededed;
+}
+
+.copyright>span:first-child {
+    font-family: serif;
+}
+
+.copyright>span:last-child {
+    font-weight: bold;
+    font-family: cursive;
+}
+
+.farea {
+    display: flex;
+    background-color: #093e52;
+    color: #fff;
+    text-align: center;
+}
+
+.farea>div {
+    width: 20%;
+}
+
+.farea>div:first-child {
+    position: relative;
+    width: 15%;
+}
+
+.flogo {
+    background-image: url('../shared/images/flogo.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 20vh;
+    position: absolute;
+    background-position: right;
+    right: 20px;
+    top: -25px;
+}
+
+.fbrand {
+    place-self: center;
+    text-align: left;
+    padding: 25px 0px;
+    font-family: ui-monospace;
+    font-size: 25px;
+}
+
+.fadres,
+.fphone {
+    border-left: 2px solid #dcad0e;
+    padding: 15px 20px;
+    place-self: center;
+    text-align: left;
+}
+
+.fimg {
+    background-image: url(../shared/images/fortif.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 10vh;
+    place-self: center;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+/* Mobile Devices */
+
+@media screen and (max-width: 600px) {
+    .logo {
+        height: 10vh;
+    }
+
+    .top_list>li,
+    .top_list>li:last-child {
+        border: none;
+        padding: 7px;
+        font-size: 12px;
+    }
+
+    .menu_items {
+        padding-left: 0;
+    }
+
+    .menu_items>li {
+        font-size: 10px;
+        list-style: none;
+        margin: 5px;
+    }
+
+    .student_img {
+        height: 20vh;
+    }
+
+    .staff>div,
+    .donate>div,
+    .food>div {
+        position: relative;
+        right: 0;
+        background: #2a5c6f;
+        color: #fff;
+        height: 20px;
+        text-align: center;
+        padding: 0;
+        font-size: 15px;
+        width: 100%;
+    }
+
+    .categories {
+        display: block;
+    }
+
+    .staff,
+    .donate,
+    .food {
+        margin-left: 0px;
+    }
+
+    .list_news {
+        display: block;
+        padding: 0px;
+    }
+
+    .list_news>.upcoming,
+    .list_news>.announcement {
+        width: 100%;
+    }
+
+    .event_date {
+        padding: 10px 15px;
+    }
+
+    .upcoming>h1,
+    .announcement>h1,
+    .gallery>h2 {
+        font-size: 20px;
+    }
+
+    .news,
+    .news_noimg {
+        display: block;
+    }
+
+    .news_img {
+        width: 100%;
+        margin-right: 0px;
+    }
+
+    .news>div:last-child {
+        width: 100%;
+    }
+
+    .school_img {
+        height: 20vh;
+        background-position-x: center;
+    }
+
+    .gallery>h2 {
+        margin-left: 0px;
+        text-align: center;
+    }
+
+    .img_area {
+        display: block;
+    }
+
+    .our_school_container,
+    .school_life_container {
+        width: 90%;
+    }
+
+    .our_school_container>div,
+    .school_life_container>div {
+        font-size: 20px;
+        padding: 5px;
+    }
+
+    .our_school,
+    .school_life {
+        height: 30vh;
+    }
+
+    .video_area {
+        display: block;
+        margin: 0px;
+        overflow: hidden;
+    }
+
+    .video_text,
+    .video {
+        width: 100%;
+        text-align: center;
+        padding: 35px 0;
+    }
+
+    .video>iframe {
+        height: 30vh;
+    }
+
+    .video_text>h1 {
+        font-size: 25px;
+    }
+
+    .video_text>span {
+        font-size: 15px;
+    }
+
+    .video_text>a {
+        margin-top: 25px;
+        font-size: 15px;
+    }
+
+    .farea {
+        display: block;
+        text-align-last: center;
+        padding: 15px 0px;
+    }
+
+    .flogo {
+        position: relative;
+        background-position: center;
+        top: 0px;
+        right: 0px;
+    }
+
+    .fimg {
+        margin: 10px 0px;
+        background-position: center;
+    }
+
+    .farea>div,
+    .farea>div:first-child {
+        width: 99%;
+    }
+
+    .fadres,
+    .fphone {
+        margin: 15px 0px;
+        padding: 0px;
+    }
+
+}
+
+@media screen and (min-width: 601px) and (max-width: 750px) {
+    .categories {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 992px) {
+    .logo {
+        height: 11vh;
+    }
+
+    .top_list {
+        margin-right: 0px;
+    }
+
+    .top_list>li {
+        font-size: 13px;
+    }
+
+    .menu_items {
+        font-size: 13px;
+        padding-left: 0px;
+    }
+
+    .menu_items>li {
+        margin: 14px;
+    }
+
+    .student_img {
+        height: 40vh;
+    }
+
+    .staff,
+    .donate,
+    .food {
+        height: 20vh;
+    }
+
+    .staff>div,
+    .donate>div,
+    .food>div {
+        position: relative;
+        right: 0;
+        background: #2a5c6f;
+        color: #fff;
+        height: 20px;
+        text-align: center;
+        padding: 0;
+        font-size: 15px;
+        width: 100%;
+    }
+
+    .list_news {
+        display: block;
+    }
+
+    .list_news>.upcoming,
+    .list_news>.announcement {
+        width: 100%;
+    }
+
+    .upcoming>h1,
+    .announcement>h1 {
+        text-align: center;
+    }
+
+    .school_img {
+        height: 40vh;
+    }
+
+    .gallery>h2 {
+        margin-left: 0px;
+        text-align: center;
+    }
+
+    .img_area {
+        margin: 15px;
+    }
+
+    .our_school_container,
+    .school_life_container {
+        width: 100%;
+        margin: 5px
+    }
+
+    .our_school,
+    .school_life {
+        height: 25vh;
+    }
+
+    .our_school_container>div,
+    .school_life_container>div {
+        font-size: 22px;
+    }
+
+    .video_area {
+        display: block;
+        text-align: center;
+    }
+
+    .video_text,
+    .video {
+        width: 100%;
+        padding: 35px 0px;
+    }
+
+    .video_text>h1 {
+        font-size: 40px;
+    }
+
+    .video_text>span {
+        margin-bottom: 25px;
+    }
+
+    .video>iframe {
+        height: 300px;
+    }
+
+    .farea {
+        display: block;
+        text-align-last: center;
+        padding: 15px 0px;
+    }
+
+    .flogo {
+        position: relative;
+        background-position: center;
+        top: 0px;
+        right: 0px;
+    }
+
+    .fimg {
+        margin: 10px 0px;
+        background-position: center;
+    }
+
+    .farea>div,
+    .farea>div:first-child {
+        width: 100%;
+    }
+
+    .fadres,
+    .fphone {
+        margin: 15px 0px;
+        padding: 0px;
+    }
+
+}
+
+
+@media screen and (min-width: 993px) and (max-width: 1400px) {
+
+    .top_list{
+        margin-right: 0px;
+    }
+
+    .logo{
+        height: 15vh;
+    }
+
+    .student_img{
+        height: 60vh;
+    }
+
+    .staff,
+    .donate,
+    .food {
+        height: 25vh;
+        width: 35%;
+    }
+
+    .news_img {
+        height: 15vh;
+        width: 55%;
+    }
+
+    .news>div:last-child>p, .news_noimg>div:last-child>p{
+        font-size: 13px;
+    }
+
+    .events{
+        font-size: 15px;
+    }
+
+    .video_text {
+        width: 35%;
+    }
+
+    .video {
+        width: 65%;
+    }
+
+    .video_text>h1 {
+        font-size: 55px;
+    }
+
+    .flogo {
+        top: -7px;
+        height: 27vh;
+    }
+
+    .fimg {
+        height: 16vh;
+    }
+
+    .our_school,
+    .school_life {
+        height: 30vh;
+    }
+
+    .staff>div,
+    .donate>div,
+    .food>div {
+        position: relative;
+        right: 0;
+        background: #2a5c6f;
+        color: #fff;
+        height: 20px;
+        text-align: center;
+        padding: 7px 0px;
+        font-size: 15px;
+        width: 100%;
+    }
+
+    /* .list_news {
+        display: block;
+    }
+
+    .list_news>.upcoming,
+    .list_news>.announcement {
+        width: 100%;
+    }
+
+    .upcoming>h1,
+    .announcement>h1 {
+        text-align: center;
+    } */
+}
+
+@media screen and (min-width: 1401px) {
+
+    .staff,
+    .donate,
+    .food {
+        height: 26vh;
+    }
+
+    .staff>div,
+    .donate>div,
+    .food>div {
+        padding-top: 110px;
+    }
+
+    .video_text {
+        width: 35%;
+    }
+
+    .video {
+        width: 65%;
+    }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1500px) {
+    .fbrand {
+        font-size: 20px;
+        margin-left: 25px;
+    }
+
+    .fimg {
+        height: 8vh;
+    }
+
+    .flogo {
+        right: -13px;
+        top: -40px;
+        height: 21vh;
+    }
+}
